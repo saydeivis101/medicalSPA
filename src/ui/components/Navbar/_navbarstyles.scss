@@ -1,0 +1,70 @@
+@import "/src/styles/base/variables";
+
+li::after {
+  content: "|";
+  margin-left: 10px;
+  color: #000;
+}
+.hero__top {
+  display: flex;
+  background-color: $navBackground;
+  font-size: 0.6rem;
+  align-items: center;
+  height: 2.2rem;
+  .hero_schedule {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .nav_top {
+    margin-left: auto;
+    margin-right: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    a {
+        margin: 0 1rem;
+    }
+}
+.login {
+    margin-left: 0.5rem;
+}
+}
+
+/* 
+<div className="hero__top">
+<div className="hero_schedule">
+<i className="fa-regular fa-clock"></i>
+<p> OPENED ON WEEKDAYS FROM 8:30 AM TO 6:30 PM</p>
+</div>
+
+<nav className="nav-top">
+<NavLink>History</NavLink>
+<NavLink>Carrers</NavLink>
+<NavLink>News</NavLink>
+<NavLink>Privacy Policy</NavLink>
+</nav>
+
+<NavLink>LOGIN</NavLink>
+</div>
+<header className="hero">
+<div className="logo-brand">
+<img src="https://picsum.photos/100/100" alt="MedLife Logo" />
+        </div>
+        <div className="text-brand">
+        <h1>MEDLIFE</h1>
+        </div>
+        <nav className="nav-menu">
+        <NavLink>CLINICS</NavLink>
+        <NavLink>SERVICES</NavLink>
+          <NavLink>DOCTORS</NavLink>
+          <NavLink>TIMETABLE</NavLink>
+          <NavLink>PAGES</NavLink>
+          <NavLink>BLOG</NavLink>
+          <NavLink>SHOP</NavLink>
+          <NavLink>CONTACT</NavLink>
+        </nav>
+        <button className="btn btn-primary">
+          <i className="fa-solid fa-phone"></i> +44 725-555-1234
+        </button>
+      </header>
+*/

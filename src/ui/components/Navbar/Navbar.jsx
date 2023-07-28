@@ -11,8 +11,11 @@ export const Navbar = () => {
 
         <nav className="nav_top">
           <NavLink to="medical/#">History</NavLink>
+          <span>|</span>
           <NavLink to="medical/doctors">Carrers</NavLink>
+          <span>|</span>
           <NavLink to="medical/blog">News</NavLink>
+          <span>|</span>
           <NavLink to="medical/#">Privacy Policy</NavLink>
         </nav>
 
@@ -21,25 +24,35 @@ export const Navbar = () => {
         </div>
       </div>
       <header className="hero">
-        <div className="logo-brand">
-          <img src="https://picsum.photos/100/100" alt="MedLife Logo" />
+        <div className="brand">
+          <div className="logo_brand">
+            <img src="https://picsum.photos/100/100" alt="MedLife Logo" />
+          </div>
+          <div className="text_brand">
+            <h1>MEDLIFE</h1>
+          </div>
         </div>
-        <div className="text-brand">
-          <h1>MEDLIFE</h1>
-        </div>
-        <nav className="nav-menu">
-          <NavLink>CLINICS</NavLink>
-          <NavLink>SERVICES</NavLink>
-          <NavLink>DOCTORS</NavLink>
-          <NavLink>TIMETABLE</NavLink>
-          <NavLink>PAGES</NavLink>
-          <NavLink>BLOG</NavLink>
-          <NavLink>SHOP</NavLink>
-          <NavLink>CONTACT</NavLink>
-        </nav>
-        <button className="btn btn-primary">
-          <i className="fa-solid fa-phone"></i> +44 725-555-1234
-        </button>
+
+
+          <nav className="nav_menu">
+            <NavLink to="">CLINICS</NavLink>
+            <NavLink to="">SERVICES</NavLink>
+            <NavLink to="">DOCTORS</NavLink>
+            <NavLink to="">TIMETABLE</NavLink>
+            <NavLink to="">PAGES</NavLink>
+            <NavLink to="">BLOG</NavLink>
+            <NavLink to="">SHOP</NavLink>
+            <NavLink to="">CONTACT</NavLink>
+          </nav>
+
+        <nav className="nav_menu-right">
+            <button className="btn btn-primary">
+              <i className="fa-solid fa-phone"></i> +44 725-555-1234
+            </button>
+            <NavLink to="">
+              <i className="fa-solid fa-cart-plus"></i>
+            </NavLink>
+          </nav>
       </header>
     </>
   );
